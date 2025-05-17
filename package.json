@@ -1,0 +1,64 @@
+{
+  "name": "website-source-extractor",
+  "version": "1.0.0",
+  "description": "A CLI tool that extracts source code and assets from websites for analysis and offline viewing",
+  "main": "dist/index.js",
+  "bin": {
+    "website-source-extractor": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli/index.js",
+    "dev": "ts-node src/cli/index.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabonkoda/website-source-extractor.git"
+  },
+  "homepage": "https://github.com/kabonkoda/website-source-extractor#readme",
+  "bugs": {
+    "url": "https://github.com/kabonkoda/website-source-extractor/issues"
+  },
+  "keywords": [
+    "website",
+    "source",
+    "extractor",
+    "sourcemap",
+    "cli",
+    "web-scraping",
+    "developer-tools",
+    "javascript",
+    "css",
+    "html"
+  ],
+  "author": "Adeyeye Oluwatobiloba (@kabonkoda)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "detective": "^5.2.1",
+    "jsdom": "^22.1.0",
+    "source-map": "^0.7.4",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/detective": "^5.1.4",
+    "@types/jest": "^29.5.6",
+    "@types/jsdom": "^21.1.4",
+    "@types/node": "^20.17.47",
+    "@types/yargs": "^17.0.29",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.52.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

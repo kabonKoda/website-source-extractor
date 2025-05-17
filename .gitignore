@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/
+npm-debug.log
+
+# Build output
+dist/
+build/
+lib/
+
+# Coverage reports
+coverage/
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+.env
+
+# Log files
+*.log
+logs/
+
+# Extracted website data
+extracted-*/
+
+# TypeScript cache
+*.tsbuildinfo 
